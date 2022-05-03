@@ -20,6 +20,7 @@ from solution import Solution
 # Modify this line to import your own solvers.
 # YOUR CODE HERE
 from solve import solve_naive
+from solve import max_min_overlap
 
 
 class Size(enum.Enum):
@@ -32,11 +33,11 @@ def solver(size: Size, instance: Instance) -> Solution:
     # Modify this function to use your imported solvers.
     # YOUR CODE HERE
     if size == Size.SMALL:
-        return solve_naive(instance)
+        return max_min_overlap(instance)
     elif size == Size.MEDIUM:
-        return solve_naive(instance)
+        return max_min_overlap(instance)
     elif size == Size.LARGE:
-        return solve_naive(instance)
+        return max_min_overlap(instance)
 
 
 # You shouldn't need to modify anything below this line.
